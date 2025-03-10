@@ -75,7 +75,7 @@ const Analytics = () => {
       setLoading(true);
       setError("");
       try {
-        const response = await fetch("http://127.0.0.1:4000/validate", {
+        const response = await fetch("https://idea-validator.onrender.com/validate", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
@@ -175,7 +175,7 @@ const Analytics = () => {
     setConfirmationError("");
 
     try {
-      const response = await fetch("http://127.0.0.1:4000/confirm", {
+      const response = await fetch("https://idea-validator.onrender.com/confirm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ confirmation }),
