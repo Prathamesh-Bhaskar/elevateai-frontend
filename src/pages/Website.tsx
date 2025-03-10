@@ -14,7 +14,7 @@ const Website = () => {
         project_description: localStorage.getItem("project_description"),
       };
 
-      const response = await fetch("http://127.0.0.1:5000/mermaid", {
+      const response = await fetch("https://mermaid-chart-generator.onrender.com/mermaid", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
 
