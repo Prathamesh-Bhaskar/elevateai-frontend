@@ -10,7 +10,7 @@ const Canvas = () => {
 
   const handleCanvasData = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:4001/canvas", {
+      const response = await fetch("https://bmc-canvas-generator.onrender.com/canvas", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ startup_description: canvasData }),
